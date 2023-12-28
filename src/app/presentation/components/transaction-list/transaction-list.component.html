@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="transaction-list">
+    <h2>Liste des Transactions</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let transaction of transactions">
+        Transaction ID: {{ transaction.id }} - Montant:
+        {{ transaction.montant }}€
+      </li>
+    </ul>
+  </div>
+</div>

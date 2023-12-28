@@ -1,0 +1,38 @@
+<!-- Utilisation de la classe 'd-flex' de Bootstrap pour flexbox -->
+<div class="account-management container mt-4">
+  <h2 class="mb-3">Gestion de compte</h2>
+  <div class="mb-3">
+    <button class="btn btn-primary" (click)="consulterSolde()">
+      Consulter Solde
+    </button>
+    <p class="mt-2">
+      Solde actuel: <strong>{{ solde }}€</strong>
+    </p>
+  </div>
+  <div class="d-flex flex-column">
+    <div class="mb-3">
+      <label for="montantDepot" class="form-label">Montant à déposer:</label>
+      <div class="input-group">
+        <input
+          type="number"
+          class="form-control"
+          id="montantDepot"
+          [(ngModel)]="montantDepot"
+        />
+        <button class="btn btn-success" (click)="deposer()">Déposer</button>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="montantRetrait" class="form-label">Montant à retirer:</label>
+      <div class="input-group">
+        <input
+          type="number"
+          class="form-control"
+          id="montantRetrait"
+          [(ngModel)]="montantRetrait"
+        />
+        <button class="btn btn-danger" (click)="retirer()">Retirer</button>
+      </div>
+    </div>
+  </div>
+</div>

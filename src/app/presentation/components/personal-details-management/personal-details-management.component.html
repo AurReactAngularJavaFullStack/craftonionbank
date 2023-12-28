@@ -1,0 +1,14 @@
+<div
+  class="personal-details-management container mt-4 d-flex flex-column align-items-center"
+>
+  <h2 class="mb-3">Gestion des Données Personnelles</h2>
+  <input
+    type="email"
+    class="form-control mb-2 w-50"
+    [(ngModel)]="email"
+    placeholder="Nouveau email"
+  />
+  <button class="btn btn-primary w-50" (click)="updateEmail()">
+    Mettre à jour
+  </button>
+</div>

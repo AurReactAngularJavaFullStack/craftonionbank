@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+
+  .transaction-list {
+    width: 100%;
+    max-width: 600px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .list-group-item {
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  }
+}

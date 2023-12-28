@@ -1,0 +1,24 @@
+<div class="transfer container mt-4 d-flex flex-column align-items-center">
+  <h2 class="mb-3">Virement entre Comptes</h2>
+  <input
+    type="text"
+    class="form-control mb-2 w-50"
+    [(ngModel)]="fromAccount"
+    placeholder="De Compte"
+  />
+  <input
+    type="text"
+    class="form-control mb-2 w-50"
+    [(ngModel)]="toAccount"
+    placeholder="Vers Compte"
+  />
+  <input
+    type="number"
+    class="form-control mb-2 w-50"
+    [(ngModel)]="montant"
+    placeholder="Montant"
+  />
+  <button class="btn btn-success w-50" (click)="effectuerVirement()">
+    Effectuer Virement
+  </button>
+</div>

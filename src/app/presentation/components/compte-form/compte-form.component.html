@@ -1,0 +1,25 @@
+<div class="container">
+  <form class="compte-form" (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="compteId">ID du Compte:</label>
+      <input
+        type="number"
+        id="compteId"
+        class="form-control"
+        [(ngModel)]="compte.id"
+        name="compteId"
+      />
+    </div>
+    <div class="form-group">
+      <label for="solde">Solde:</label>
+      <input
+        type="number"
+        id="solde"
+        class="form-control"
+        [(ngModel)]="compte.solde"
+        name="solde"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Créer Compte</button>
+  </form>
+</div>

@@ -1,0 +1,24 @@
+/* Utilisation de SASS pour écrire le CSS si nécessaire. */
+.account-management {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    max-width: 600px;
+  }
+
+  .input-group {
+    display: flex;
+
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
+
+    .form-control {
+      margin-right: 0.5rem;
+    }
+  }
+}

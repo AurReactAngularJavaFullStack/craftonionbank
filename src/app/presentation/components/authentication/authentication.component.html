@@ -1,0 +1,26 @@
+<div
+  class="authentication container mt-4 d-flex flex-column align-items-center justify-content-center"
+>
+  <h2 class="mb-3">Login</h2>
+  <div class="w-50">
+    <input
+      type="text"
+      class="form-control mb-2"
+      [(ngModel)]="username"
+      placeholder="Username"
+    />
+    <input
+      type="password"
+      class="form-control mb-2"
+      [(ngModel)]="password"
+      placeholder="Password"
+    />
+    <button class="btn btn-primary w-100" (click)="login()">Login</button>
+    <p *ngIf="loginSuccess === true" class="alert alert-success mt-2">
+      Login Successful
+    </p>
+    <p *ngIf="loginSuccess === false" class="alert alert-danger mt-2">
+      Login Failed
+    </p>
+  </div>
+</div>

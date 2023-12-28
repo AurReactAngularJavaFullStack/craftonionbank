@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .compte-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .btn-primary {
+      margin-top: 10px;
+    }
+  }
+}
